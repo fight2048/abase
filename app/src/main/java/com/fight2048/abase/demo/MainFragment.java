@@ -1,4 +1,4 @@
-package com.fight204.abase.demo;
+package com.fight2048.abase.demo;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.fight2048.abase.demo.R;
 import com.fight2048.abase.mvvm.view.base.BaseFragment;
 
 public class MainFragment extends BaseFragment<MainViewModel> {

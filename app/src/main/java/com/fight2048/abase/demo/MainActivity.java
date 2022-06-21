@@ -1,8 +1,7 @@
-package com.fight204.abase.demo;
+package com.fight2048.abase.demo;
 
 import android.os.Bundle;
 
-import com.fight2048.abase.demo.R;
 import com.fight2048.abase.mvvm.view.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {

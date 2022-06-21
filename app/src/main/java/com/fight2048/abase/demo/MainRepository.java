@@ -1,4 +1,4 @@
-package com.fight204.abase.demo;
+package com.fight2048.abase.demo;
 
 import com.fight2048.abase.mvvm.model.base.BaseRepository;
 
