@@ -45,5 +45,6 @@ dependencies {
 
     //abase模块。
 //    api project(':library')
-    implementation 'com.gitee.fight2048:ABase:1.0.1'
+//    implementation 'com.gitee.fight2048:ABase:1.0.1'
+    implementation 'com.github.fight2048:abase:1.0.2'
 }
