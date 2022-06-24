@@ -47,10 +47,10 @@ dependencies {
     api 'androidx.lifecycle:lifecycle-common-java8:2.4.0'
     api 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     //谷歌官方数据库ORM库
-    api "androidx.room:room-runtime:2.3.0"
+    implementation 'androidx.room:room-runtime:2.4.2'
     // optional - RxJava support for Room
-    api "androidx.room:room-rxjava2:2.3.0"
-    annotationProcessor "androidx.room:room-compiler:2.3.0"
+    implementation 'androidx.room:room-rxjava3:2.4.2'
+    annotationProcessor 'androidx.room:room-compiler:2.4.2'
 
 //    //RxJava2系列
 //    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
