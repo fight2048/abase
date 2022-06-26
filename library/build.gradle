@@ -99,7 +99,7 @@ dependencies {
     //屏幕适配
     api 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
     //微信MMKV库，用来替代
-    api 'com.tencent:mmkv-static:1.2.11'
+    api 'com.tencent:mmkv:1.2.13'
     //监控内存泄露
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 
