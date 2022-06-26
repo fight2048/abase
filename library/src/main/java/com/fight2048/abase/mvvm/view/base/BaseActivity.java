@@ -127,9 +127,10 @@ public abstract class BaseActivity<VM extends BaseViewModel> extends AppCompatAc
     protected void onDestroy() {
         super.onDestroy();
         ActivityHelper.getInstance().removeActivity(this);
-        if (mImmersionBar != null) {
-//            mImmersionBar.destroy();
-        }
         getLifecycle().removeObserver(mViewModel);
+        if (loadingDialog != null) {
+            loadingDialog.dismiss();
+            loadingDialog = null;
+        }
     }
 }

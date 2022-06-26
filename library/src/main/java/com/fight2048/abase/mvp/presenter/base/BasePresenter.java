@@ -10,10 +10,10 @@ import java.lang.ref.WeakReference;
 import java.lang.reflect.Proxy;
 import java.lang.reflect.Type;
 
-import io.reactivex.Observer;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
+import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.functions.Consumer;
 import retrofit2.Response;
 
 /**

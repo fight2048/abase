@@ -1,4 +1,4 @@
-package com.fight2048.abase.mvp.ui.base;
+package com.fight2048.abase.mvp.view.base;
 
 import android.content.Context;
 

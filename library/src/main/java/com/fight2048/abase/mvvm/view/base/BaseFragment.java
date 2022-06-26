@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.fight2048.abase.mvvm.contract.base.BaseContract;
 import com.fight2048.abase.mvvm.viewmodel.base.BaseViewModel;
@@ -19,9 +18,9 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 import cn.itsite.adialog.dialog.LoadingDialog;
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
+import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.functions.Consumer;
 import retrofit2.Response;
 
 /**
@@ -80,7 +79,7 @@ public abstract class BaseFragment<VM extends BaseViewModel> extends Fragment im
     }
 
     protected VM onCreateViewModel() {
-        return onBindViewModel() != null ? ViewModelProviders.of(this).get(onBindViewModel()) : null;
+        return onBindViewModel() != null ? new ViewModelProvider(this).get(onBindViewModel()) : null;
     }
 
     protected Class<VM> onBindViewModel() {
@@ -88,17 +87,13 @@ public abstract class BaseFragment<VM extends BaseViewModel> extends Fragment im
     }
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        if (mImmersionBar != null) {
-//            mImmersionBar.destroy();
-        }
-    }
-
-    @Override
     public void onDestroy() {
         super.onDestroy();
         getLifecycle().removeObserver(mViewModel);
+        if (loadingDialog != null) {
+            loadingDialog.dismiss();
+            loadingDialog = null;
+        }
     }
 
     public VM getViewModel() {
