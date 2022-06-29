@@ -47,9 +47,9 @@ dependencies {
     api 'androidx.lifecycle:lifecycle-common-java8:2.4.0'
     api 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     //谷歌官方数据库ORM库
-    implementation 'androidx.room:room-runtime:2.4.2'
+    api 'androidx.room:room-runtime:2.4.2'
     // optional - RxJava support for Room
-    implementation 'androidx.room:room-rxjava3:2.4.2'
+    api 'androidx.room:room-rxjava3:2.4.2'
     annotationProcessor 'androidx.room:room-compiler:2.4.2'
 
 //    //RxJava2系列
@@ -101,6 +101,6 @@ dependencies {
     //微信MMKV库，用来替代
     api 'com.tencent:mmkv:1.2.13'
     //监控内存泄露
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+    debugApi 'com.squareup.leakcanary:leakcanary-android:2.7'
 
 }
