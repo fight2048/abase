@@ -29,4 +29,9 @@ public abstract class BaseRecyclerViewAdapter<T, K extends BaseViewHolder> exten
     public BaseRecyclerViewAdapter(int layoutResId) {
         super(layoutResId);
     }
+
+    public void clear() {
+        getData().clear();
+        notifyDataSetChanged();
+    }
 }
