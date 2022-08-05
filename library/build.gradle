@@ -32,7 +32,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     // todo ----------------二方库：内部使用的弹框框架-------------------
     //一个扩展性很好的Dialog+DialogFragment工具。
-    api 'com.github.leguang:ADialog:2.0.7'
+    api 'com.github.fight2048:adialog:1.0.0'
     // todo ----------------二方库：内部使用的弹框框架-------------------
 
     //谷歌官方依赖
