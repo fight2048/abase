@@ -11,10 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.fight2048.abase.common.ActivityHelper;
 import com.fight2048.abase.mvp.contract.base.BaseContract;
+import com.fight2048.adialog.androidx.dialog.LoadingDialog;
 import com.gyf.immersionbar.ImmersionBar;
 import com.gyf.immersionbar.OSUtils;
-
-import cn.itsite.adialog.dialog.LoadingDialog;
 
 /**
  * @author: fight2048

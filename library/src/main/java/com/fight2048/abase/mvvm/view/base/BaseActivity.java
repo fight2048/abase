@@ -12,10 +12,9 @@ import androidx.lifecycle.ViewModelProvider;
 import com.fight2048.abase.common.ActivityHelper;
 import com.fight2048.abase.mvvm.contract.base.BaseContract;
 import com.fight2048.abase.mvvm.viewmodel.base.BaseViewModel;
+import com.fight2048.adialog.androidx.dialog.LoadingDialog;
 import com.gyf.immersionbar.ImmersionBar;
 import com.gyf.immersionbar.OSUtils;
-
-import cn.itsite.adialog.support.dialog.LoadingDialog;
 
 /**
  * @author: fight2048

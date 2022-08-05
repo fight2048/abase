@@ -10,9 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.fight2048.abase.mvp.contract.base.BaseContract;
+import com.fight2048.adialog.androidx.dialog.LoadingDialog;
 import com.gyf.immersionbar.ImmersionBar;
 
-import cn.itsite.adialog.dialog.LoadingDialog;
 import io.reactivex.rxjava3.core.Observer;
 import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.functions.Consumer;
