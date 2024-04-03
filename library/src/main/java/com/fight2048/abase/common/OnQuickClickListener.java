@@ -10,7 +10,7 @@ import android.view.View;
  * @version: v0.0.0
  * @description:
  */
-public abstract class NoMultiClickListener implements View.OnClickListener {
+public abstract class OnQuickClickListener implements View.OnClickListener {
     public static final int MIN_DELAY_TIME = 618;
     private long lastTime = 0;
 
@@ -19,9 +19,9 @@ public abstract class NoMultiClickListener implements View.OnClickListener {
         long currentTime = System.currentTimeMillis();
         if (currentTime - lastTime > MIN_DELAY_TIME) {
             lastTime = currentTime;
-            onNoMultiClick(view);
+            onQuickClick(view);
         }
     }
 
-    public abstract void onNoMultiClick(View view);
+    public abstract void onQuickClick(View view);
 }
