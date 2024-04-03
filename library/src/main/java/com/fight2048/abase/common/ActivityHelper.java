@@ -26,7 +26,7 @@ public class ActivityHelper {
     /**
      * 单一实例
      */
-    public static ActivityHelper getInstance() {
+    public static ActivityHelper of() {
         if (instance == null) {
             instance = new ActivityHelper();
         }

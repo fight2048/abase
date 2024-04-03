@@ -34,7 +34,7 @@ public abstract class BaseActivity<P extends BaseContract.Presenter> extends App
 
     private void initActivity() {
         //把每一个Activity加入栈中
-        ActivityHelper.getInstance().addActivity(this);
+        ActivityHelper.of().addActivity(this);
     }
 
     protected void initStateBar() {
@@ -60,7 +60,7 @@ public abstract class BaseActivity<P extends BaseContract.Presenter> extends App
     protected void onDestroy() {
         super.onDestroy();
         //把每一个Activity弹出栈。
-        ActivityHelper.getInstance().removeActivity(this);
+        ActivityHelper.of().removeActivity(this);
 
         if (mPresenter != null) {
             mPresenter.onClear();

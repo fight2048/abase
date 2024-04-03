@@ -28,7 +28,7 @@ public abstract class BaseActivity<VM extends BaseViewModel> extends AppCompatAc
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityHelper.getInstance().addActivity(this);
+        ActivityHelper.of().addActivity(this);
         initStateBar();
         initViewModel();
     }
@@ -103,7 +103,7 @@ public abstract class BaseActivity<VM extends BaseViewModel> extends AppCompatAc
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        ActivityHelper.getInstance().removeActivity(this);
+        ActivityHelper.of().removeActivity(this);
         getLifecycle().removeObserver(mViewModel);
         if (loadingDialog != null) {
             loadingDialog.dismiss();
